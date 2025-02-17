@@ -15,7 +15,7 @@
  * #-Service Card
  * #-Про Нас
  * #-Counter
- * #-Why Choose Us
+ * #-ЧОМУ ILARIYA
  * #-Portfolio
  * #-Banner Section
  * #-Team
@@ -755,12 +755,23 @@ img {
 
 .footer-widgets-item .f-logo {
     margin-bottom: 30px;
+
+    width: 60%;
+    height: auto;
 }
 
 .footer-widgets-item p.content {
     margin-bottom: 30px;
     color: #d2d2d4;
     font-size: 16px;
+}
+
+.footer-widgets-item--top p.content {
+    max-width: 85%;
+
+    @media (max-width: 998px) {
+        max-width: 70%;
+    }
 }
 
 .footer-social span {
@@ -867,7 +878,6 @@ img {
 
 .footer-bottom {
     text-align: center;
-    background: #04132c47;
 }
 
 .footer-bottom .copy-text p {
@@ -3432,7 +3442,7 @@ a.button-1.style-2:hover {
 }
 
 /*
- * #-Why Choose Us
+ * #-ЧОМУ ILARIYA
 */
 .ct-why-choose-us-section .content p.text {
     font-size: 16px;
@@ -4931,4 +4941,38 @@ h2.accordion-header {
 [data-bs-theme="dark"] .services-card-item {
     -webkit-box-shadow: 0px 10px 30px 0px rgb(172 172 172 / 7%);
     box-shadow: 0px 10px 30px 0px rgb(172 172 172 / 7%);
+}
+
+.h1-highlighted {
+    display: inline-block;
+    background-color: var(--primary-color);
+
+    padding-inline: 0.25ch;
+}
+
+.footer-top-custom-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+
+    @media (max-width: 999.98px) {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+}
+
+.footer-widgets-item--last {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.footer-widgets-item--top {
+    @media (max-width: 999.98px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
