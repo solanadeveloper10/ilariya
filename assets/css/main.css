@@ -24,7 +24,7 @@
  * #-Pricing Plan
  * #-Hero Slider
  * #-Industry We Serve
- * #-Зв&#39;затись з Нами
+ * #-Зв&#39;язатись з Нами
 */
 @import url('../../../../css2');
 
@@ -4551,7 +4551,7 @@ a.button-1.style-2:hover {
 }
 
 /*
- * #-Зв&#39;затись з Нами
+ * #-Зв&#39;язатись з Нами
 */
 .ct-contact-list .item-cf {
     margin-bottom: 30px;
@@ -4974,5 +4974,17 @@ h2.accordion-header {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+.form-custom-wrapper {
+    display: grid;
+
+    grid-template-columns: 4fr 8fr;
+
+    gap: 1.5rem;
+
+    @media (max-width: 999.98px) {
+        grid-template-columns: 1fr;
     }
 }
